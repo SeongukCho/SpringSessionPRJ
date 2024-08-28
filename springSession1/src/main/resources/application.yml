@@ -1,1 +1,23 @@
-spring.application.name=springSession1
+spring:
+  application:
+    name: springSession1
+  data:
+    redis:
+#      host: 192.168.31.128
+#      port: 6379
+#      username: poly
+#      password: 1234
+      host: redis-12420.c340.ap-northeast-2-1.ec2.redns.redis-cloud.com
+      port: 12420
+      username: default
+      password: KtENKOxSCRyM6mRZLKQhKtkHOUqrCkpA
+  session:
+    redis:
+      flush-mode: on_save
+
+
+server:
+  port: 25000
+  servlet:
+    session:
+      timeout: 10m
