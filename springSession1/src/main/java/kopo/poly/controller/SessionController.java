@@ -24,7 +24,7 @@ public class SessionController {
         // 세션 저장하기
         session.setAttribute("test", "springSession1 서버에서 저장한 값");
 
-        // 세션 가져오기
+        // 세션값 가져오기
         String test = CmmUtil.nvl((String) session.getAttribute("test"));
 
         // 화면에 보여줄 값 출력을 위해 DTO 생성하고, 값 넣어줌
